@@ -1,0 +1,30 @@
+# Site settings
+title: "My Jekyll Site"
+description: "A Jekyll-powered site deployed on Netlify"
+baseurl: ""  # Leave empty unless deploying to a subdirectory
+#url: "https://your-netlify-site.netlify.app"  # Replace with your actual Netlify URL
+
+# Build settings
+markdown: kramdown
+theme: minima  # Change if using a custom theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalinks
+permalink: pretty
+
+# Exclude files from the build
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - netlify.toml
+
+# Default collections settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
